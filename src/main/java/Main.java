@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         BooleanSearchEngine engine = new BooleanSearchEngine(new File("pdfs"));
 
-        try (ServerSocket serverSocket = new ServerSocket(8988)) {
+        try (ServerSocket serverSocket = new ServerSocket(8989)) {
             while (true) {
                 try (Socket socket = serverSocket.accept();
                      BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
